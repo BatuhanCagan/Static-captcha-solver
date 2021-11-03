@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scrpt.js"></script>
+</head>
+<body onload="generate()">
+    
+    <div class="form">
+    <div>
+    <label>AD SOYAD</label> <br>
+    <br><input type="text" name="name" placeholder="Ad Soyad" id="a">
+    <br><br> <label>TELEFON NUMARASI</label> <br>
+    <br><input type="text" name="tel" placeholder="Telefon Numaranız" id="b">
+    <br><br> <label>ADRES</label> <br>
+    <br><input type="text" name="adres" placeholder="Adresiniz" id="c">
+    </div><br><br>
+    <img src="Adsiz.png" id="ca" alt="">
+    <input type="text" name="capt" id="d">
+    <button type="submit" onClick="but();" id="ert">Kayıt Et</button>
+    </div>
+
+    <script>
+        function but(){
+            document.getElementById("a").value = '';
+            document.getElementById("b").value = '';
+            document.getElementById("c").value = '';
+            document.getElementById("d").value = '';
+
+        }
+    </script>
+    
+</body>
+</html>
